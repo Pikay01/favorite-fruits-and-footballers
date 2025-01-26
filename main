@@ -1,0 +1,37 @@
+# import the libraries
+from flet import *
+
+# defining the function
+def main(page: Page):
+    page.add(
+        # row is horizontal
+        Row(
+            controls= [
+                Text("My Favorite Friuts:\n")
+            ]
+        ),
+        Row(
+            controls= [
+                Text("Apple"),
+                Text("Mango"),
+                Text("Oranges")
+            ]
+        ),
+        # column is vertical
+        Column(
+            controls= [
+                Text("\n\nMy Favorite Footballers:\n")
+            ]
+        ),
+        Column(
+            controls= [
+                Text("Christiano Ronaldo"),
+                Text("Neymar Junior"),
+                Text("Luiz Diaz")
+            ]
+        )
+    )
+
+
+# calling the function
+app(target=main)
